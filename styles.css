@@ -1,0 +1,131 @@
+*{
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+h1 {
+	font-size: 20px;
+}
+
+#profile{
+	cursor: pointer;
+}
+.page {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.aboutme{
+	display : flex;
+	flex-wrap: wrap;
+	position: absolute; 
+	z-index: 5;
+	background-color: black;
+	opacity: 0.9;
+
+}
+.box{
+	padding: 50px;
+	margin : 50px;
+}
+
+.aboutme p{
+	color: white;
+	text-align : justify;
+	vertical-align: middle;
+
+}
+
+img {
+	width 	: 100%;
+	height 	: auto;
+}
+
+.icon{
+	position : relative;
+	width : 130px;
+	display: block;
+}
+.icon img{
+	display: block;
+	max-width: 125px;
+	padding : 0;
+}
+
+.icon p{
+	margin-top: -10px;
+	font-size : 20px;
+	text-align: justify;
+	font-weight : bold;
+	color 	: rgb(100,100,100);
+}
+
+.illustration {
+display: block;
+width: 90%;
+height: auto;
+
+}
+
+.portal {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+/*border :2px solid green;
+*/position: relative;
+
+}
+
+ul {
+  list-style: none;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+   /* background-color: #F09A9D;  Red */
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .portal
+   {
+    width: 49%;
+  }
+  .aboutme {
+  	width:100%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+/*    border: 1px solid black
+*/  }
+
+  .aboutme {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+  }
+
+  .portal {
+    width: 19%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+footer{
+	 position:fixed;
+    bottom:0px;
+    width:100%;
+    text-align: center;
+    font-size: 10px;
+}
